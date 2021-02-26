@@ -9,7 +9,7 @@
     <script src="/scrollreveal.js"></script>
 </head>
 <body>
-    <header class="navbar">
+    <header class="awelo">
         <a href="" class="logo">Food<span>.</span></a>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
@@ -182,23 +182,26 @@
         </div>
         <div class="contactForm">
             <h3>Send Message</h3>
+            <form action="" class="contact-form" method="POST">
             <div class="inputBox">
-                <input type="text" placeholder="Name">
+                <input type="text" class="name" placeholder="Name" autofocus>
             </div>
             <div class="inputBox">
-                <input type="text" placeholder="Email">
+                <input type="text" class="email" placeholder="Email">
             </div>
             <div class="inputBox">
-                <textarea></textarea>
+                <textarea class="message"></textarea>
             </div>
             <div class="inputBox">
                 <input type="submit" value="Send">
             </div>
+            </form>
         </div>
     </section>
     <div class="copyrightText">
         <p>Desarrollado por <a href="https://habdes.pe/" target="_blank">Habdes</a>.</p>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/app.js"></script>
 </body>
 </html>
